@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D5D770A-E040-4A8D-8741-2482AD61B1B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormAtm</RootNamespace>
+    <AssemblyName>FormAtm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>atm_22180.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtmGiris.Designer.cs">
+      <DependentUpon>AtmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtmPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtmPanel.Designer.cs">
+      <DependentUpon>AtmPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credit.Designer.cs">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faturaode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faturaode.Designer.cs">
+      <DependentUpon>faturaode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paracek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paracek.Designer.cs">
+      <DependentUpon>paracek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paragonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paragonder.Designer.cs">
+      <DependentUpon>paragonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parayatır.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parayatır.Designer.cs">
+      <DependentUpon>parayatır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AtmGiris.resx">
+      <DependentUpon>AtmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtmPanel.resx">
+      <DependentUpon>AtmPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credit.resx">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="faturaode.resx">
+      <DependentUpon>faturaode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paracek.resx">
+      <DependentUpon>paracek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paragonder.resx">
+      <DependentUpon>paragonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parayatır.resx">
+      <DependentUpon>parayatır.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="atm_22180.ico" />
+    <None Include="Resources\deposit_no_corruption_icon_226103.png" />
+    <None Include="Resources\Deposit_icon-icons.com_56681.png" />
+    <None Include="Resources\3-atm-thumb%402x.jpg" />
+    <None Include="Resources\3668832-atm-cashout-money-withdraw_108038.png" />
+    <None Include="Resources\1489186740-constructgearoptimizerepairsetting_81823.png" />
+    <None Include="Resources\setting_balance_equalizer_icon_1522171.png" />
+    <None Include="Resources\setting_balance_equalizer_icon_152217.png" />
+    <None Include="Resources\360_F_105687242_Emq31t55LuKHi3KNywD98Tfhf0PNlCEq1.jpg" />
+    <None Include="Resources\360_F_105687242_Emq31t55LuKHi3KNywD98Tfhf0PNlCEq.jpg" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\internet_lock_locked_padlock_password_secure_security_icon_127100.png" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\istockphoto-1221954198-612x612.jpg" />
+    <None Include="Resources\vrbank_6906.png" />
+    <None Include="Resources\banking_hands_two_bank_money_funds_icon-icons.com_76295.png" />
+    <None Include="Resources\creditcard_23779.png" />
+    <None Include="Resources\bank_78392.png" />
+    <None Include="Resources\out_41401.png" />
+    <None Include="Resources\dollar_money_transaction_cash_payment_currency_transfer_icon_2326101.png" />
+    <None Include="Resources\dollar_money_transaction_cash_payment_currency_transfer_icon_232610.png" />
+    <None Include="Resources\payment_dollar_office_marketing_money_transfer_currency_business_icon_226213.png" />
+    <None Include="Resources\721creditcard_100387.png" />
+    <None Include="Resources\card_115200.png" />
+    <None Include="Resources\invoice_document_bill_delivery_note_icon_225179.png" />
+    <None Include="Resources\atm_icon_180314.png" />
+    <None Include="Resources\circle_lira_icon_232414.png" />
+    <None Include="Resources\159478.png" />
+    <None Include="Resources\1458264596_authorisation_lock_padlock_safe_password_privacy_security_icon-icons.com_553331.png" />
+    <None Include="Resources\1458264596_authorisation_lock_padlock_safe_password_privacy_security_icon-icons.com_55333.png" />
+    <None Include="Resources\3338909-atm-business-tools_106957.png" />
+    <None Include="Resources\3338908-atm-business-tools_1069263.png" />
+    <None Include="Resources\3338908-atm-business-tools_1069262.png" />
+    <None Include="Resources\3338908-atm-business-tools_1069261.png" />
+    <None Include="Resources\3338908-atm-business-tools_106926 %281%29.png" />
+    <None Include="Resources\3338908-atm-business-tools_106926.png" />
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
