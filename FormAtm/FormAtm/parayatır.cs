@@ -37,6 +37,7 @@ namespace FormAtm
             {
                 icbakiyeniz += yatırılacaktutar;
                 MessageBox.Show(yatırılacaktutar.ToString() + " TL hesabınıza yatırıldı:");
+                label1.Text = "Paranız:"+" "+icbakiyeniz.ToString()+"TL";
             }
             
         }
