@@ -74,9 +74,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(59, 152);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 17);
+            this.label1.Size = new System.Drawing.Size(149, 17);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Paranız 8500TL";
+            this.label1.Text = "Yatırılıcak Limit:8500TL";
             // 
             // btnOnayla
             // 
@@ -85,7 +85,7 @@
             this.btnOnayla.ActiveFillColor = System.Drawing.Color.CadetBlue;
             this.btnOnayla.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnOnayla.ActiveLineColor = System.Drawing.Color.CadetBlue;
-            this.btnOnayla.BackColor = System.Drawing.Color.Transparent;
+            this.btnOnayla.BackColor = System.Drawing.SystemColors.Control;
             this.btnOnayla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOnayla.BackgroundImage")));
             this.btnOnayla.ButtonText = "Onaylıyorum";
             this.btnOnayla.Cursor = System.Windows.Forms.Cursors.Hand;
